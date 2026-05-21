@@ -1,4 +1,6 @@
-﻿namespace Dsw2026Ej11.Collections;
+﻿using Dsw2026Ej11.Domain;
+
+namespace Dsw2026Ej11.Collections;
 
 //Crear un diccionario donde la clave sea el legajo y el valor el alumno
 //Incluir un método para agregar un alumno al diccionario
