@@ -10,20 +10,12 @@ namespace Dsw2026Ej11.Collections;
 public class CasoDictionary
 {
     private readonly Dictionary<int, Alumno> dic = [];
-
-    //Metodo para agregar alumno 
-    public void AgregarAlumno(int legajo, Alumno alumno) => dic.Add(legajo, alumno);
-
-    //Metodo para buscar alumno por clave
-    public Alumno? BuscarPorClave(int legajo)
+    public void AgregarAlumno(int legajo, Alumno alumno) => dic.Add(legajo, alumno);//Metodo para agregar alumno 
+    public Alumno? BuscarPorClave(int legajo)//Metodo para buscar alumno por clave
     {
         dic.TryGetValue(legajo, out Alumno? alumno);
         return alumno;
     }
-
-    //Metodo para retornar el diccionario
-    public Dictionary<int, Alumno> ObtenerDiccionario() => dic;
-
-    //Metodo para eliminar utilizando una clave 
-    public void EliminarAlumnoClave(int legajo) => dic.Remove(legajo);
+    public Dictionary<int, Alumno> ObtenerDiccionario() => dic;//Metodo para retornar el diccionario
+    public void EliminarAlumnoClave(int legajo) => dic.Remove(legajo);//Metodo para eliminar utilizando una clave 
 }
