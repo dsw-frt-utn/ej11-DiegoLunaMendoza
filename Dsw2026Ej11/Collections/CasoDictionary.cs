@@ -9,7 +9,7 @@ namespace Dsw2026Ej11.Collections;
 //Incluir un método para eliminar un alumno utilizando la clave
 public class CasoDictionary
 {
-    private readonly Dictionary<int, Alumno> dic = [];
+    private readonly Dictionary<int, Alumno> dic = []; 
     public void AgregarAlumno(int legajo, Alumno alumno) => dic.Add(legajo, alumno);//Metodo para agregar alumno 
     public Alumno? BuscarPorClave(int legajo)//Metodo para buscar alumno por clave
     {
